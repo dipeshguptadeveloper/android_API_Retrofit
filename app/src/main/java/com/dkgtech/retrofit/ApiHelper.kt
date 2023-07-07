@@ -11,6 +11,9 @@ interface ApiHelper {
     @GET("quotes")
     fun getQuotes(): Call<DataModel>
 
+    @GET("products")
+    fun getProducts(): Call<MainModel>
+
     companion object {
 
         val BASE_URL = "https://dummyjson.com/"
